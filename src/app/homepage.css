@@ -1,0 +1,198 @@
+@media (max-width: 3000px) {
+  .page {
+    font-family: monospace, "Courier New", Courier;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/rocket-7774875_1920.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .page::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .page .login,
+  .page .singup {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -2px 2px 10px 0px black;
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 90%;
+    width: 80%;
+    border: 1px solid black;
+  }
+  .page .login .txt,
+  .page .singup .txt {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+  }
+  .page .login .txt h1,
+  .page .singup .txt h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .page .login .txt p,
+  .page .singup .txt p {
+    color: white;
+  }
+  .page .login .txt p span,
+  .page .singup .txt p span {
+    text-decoration: underline;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .page .login form,
+  .page .singup form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page .login form .form-div,
+  .page .singup form .form-div {
+    width: 60%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page .login form .form-div label,
+  .page .singup form .form-div label {
+    color: white;
+  }
+
+  .page .login form .form-div input,
+  .page .singup form .form-div input {
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+    color: var(--main-color);
+    width: 180px;
+    padding: 0 2px;
+    font-size: 14px;
+  }
+  .page .login form .login-inp,
+  .page .singup form .singup-inp {
+    margin-top: 15px;
+    border: 2px solid var(--main-color);
+    padding: 5px 15px;
+    color: wheat;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .page .login form .login-inp:focus,
+  .page .singup form .singup-inp:focus {
+    outline: none;
+  }
+
+  .page .login form .form-div input:focus,
+  .page .singup form .form-div input:focus {
+    outline: none;
+    border-color: var(--main-color);
+  }
+  .page .login form .login-inp:hover,
+  .page .singup form .singup-inp:hover {
+    background-color: var(--main-color);
+  }
+
+  .page .login {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .page .login,
+  .page .singup {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .page .login .txt,
+  .page .singup .txt {
+    width: 100%;
+    align-items: center;
+  }
+  .page .login .txt h1,
+  .page .singup .txt h1 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .page .login form,
+  .page .singup form {
+    order: 1;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page .login form .form-div,
+  .page .singup form .form-div {
+    max-width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page .login form .form-div,
+  .page .singup form .form-div {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .page .login form .form-div input,
+  .page .singup form .form-div input {
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+    color: var(--main-color);
+    width: 100%;
+    padding: 0 2px;
+    font-size: 14px;
+  }
+  .page .login .txt p,
+  .page .singup .txt p {
+    font-size: 12px;
+  }
+  .page .login form .login-inp,
+  .page .singup form .singup-inp {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
